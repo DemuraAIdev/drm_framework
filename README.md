@@ -6,6 +6,7 @@ DRM is NOT a professional framework and it does not come with all the stuff real
 ## Features
 
 - simple, easy to understand
+- With Bootsrap 4
 - simple but clean structure
 - makes "beautiful" clean URLs
 - demo CRUD actions: Create, Read, Update and Delete database entries easily (ON PROJECT)
