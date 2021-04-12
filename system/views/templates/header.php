@@ -10,7 +10,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
-        <a class="navbar-brand" href="<?php echo BASEURL; ?>">DRM FRM</a>
+        <a class="navbar-brand" href="<?= BASEURL; ?>">DRM FRM</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

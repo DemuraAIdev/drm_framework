@@ -8,7 +8,8 @@ define('BASEURL', URL_PROTOCOL . URL_SERVER . URL_SUB_FOLDER);
 
 
 //Folder views
-define('VFOLDER', 'views');
+define('VFOLDER', 'views'); //nama folder views
+define('LFOLDER', '/system/'); //lokasi folder view
 
 //DATABASE CONFIG
 define('dbhost', 'localhost'); //Nama host

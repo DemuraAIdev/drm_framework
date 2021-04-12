@@ -6,7 +6,7 @@ class Controller
 {
     public function view($view, $data = [])
     {
-        require_once DRM . '/' . VFOLDER . '/' . $view . '.php';
+        require_once ROOT . LFOLDER . '/' . VFOLDER . '/' . $view . '.php';
     }
 
     public function model($model)
