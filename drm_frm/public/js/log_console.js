@@ -1,0 +1,1 @@
+console.log("Framework DRM v.1.0");
