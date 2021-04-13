@@ -1,5 +1,9 @@
 <?php
 
+/** For more info about namespaces plase @see http://php.net/manual/en/language.namespaces.importing.php */
+
+namespace Drm\Core;
+
 class App
 {
     protected $controller = 'home';
@@ -19,7 +23,6 @@ class App
         $this->controller = new $this->controller;
 
         //method
-
         if (isset($url[1])) {
             if (method_exists($this->controller, $url[1])) {
                 $this->method = $url[1];

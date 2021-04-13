@@ -21,10 +21,11 @@ $system_folder = 'system';
 define('ROOT', dirname(__DIR__) . DIRECTORY_SEPARATOR);
 define('DRM', ROOT . $system_folder . DIRECTORY_SEPARATOR);
 
-//ini hanya optional
-if (file_exists(ROOT . 'vendor/autoload.php')) {
-    require ROOT . 'vendor/autoload.php';
-}
+use Drm\Core\App;
+
+
+
+require ROOT . 'vendor/autoload.php';
 /*
  * LOAD CONFIG FILE
  *-
@@ -39,11 +40,12 @@ require_once DRM . 'config/config.php';
  * LOADING 
  */
 
+require_once DRM . 'init.php';
+
 //memeriksa config maintance
 if ($maintance == "On") {
     echo "maintance";
 } else {
     //memulai Application
-    require_once DRM . '/init.php';
     $app = new App;
 }

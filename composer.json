@@ -1,12 +1,14 @@
 {
-    "name": "drm/drm_frm",
-    "type": "project",
-    "description": "DRM_FRM a mini framwork",
-    "keywords": ["php", "framwork", "drm", "frm", "application"],
+    "name": "ddr5/drm",
+    "description": "mini famwork",
     "authors": [{
-        "name": "DRM DEVELOPER",
-        "email": "cyberaioff@gmail.com",
-        "role": "Developer"
+        "name": "Drm",
+        "email": "cyberaioff@gmail.com"
     }],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Drm\\": "system/"
+        }
+    }
 }

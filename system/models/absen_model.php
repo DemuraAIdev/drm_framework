@@ -1,4 +1,7 @@
 <?php
+
+use Drm\Core\Database;
+
 class absen_model
 {
     private $table = 'user_absen'; //nama table database

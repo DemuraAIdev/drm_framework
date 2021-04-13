@@ -1,4 +1,7 @@
 <?php
+
+use Drm\Core\Controller;
+
 class About extends Controller //About Page bawaan
 {
     public function index() //custom default

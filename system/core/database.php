@@ -1,4 +1,11 @@
 <?php
+
+/** For more info about namespaces plase @see http://php.net/manual/en/language.namespaces.importing.php */
+
+namespace Drm\Core;
+
+use PDO;
+
 class Database
 {
     private $host = dbhost;
@@ -21,7 +28,7 @@ class Database
         ];
         try {
             $this->dbh = new PDO($dsn, $this->user, $this->pass, $option);
-        } catch (PDOException $e) {
+        } catch (\PDOException $e) {
             die($e->getMessage());
         }
     }

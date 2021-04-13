@@ -1,4 +1,7 @@
 <?php
+
+use Drm\Core\Controller;
+
 class Home extends Controller
 {
     public function index()
