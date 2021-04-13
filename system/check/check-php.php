@@ -1,10 +1,10 @@
 <?php
 
-if (file_exists(DRM . "core/App" . ".php")) {
+if (file_exists(DRM . "$system_core/App" . ".php")) {
 } else {
     die("File App.php tidak ada !");
 }
-if (file_exists(DRM . "core/Controller" . ".php")) {
+if (file_exists(DRM . "$system_core/Controller" . ".php")) {
 } else {
     die("File Controller.php tidak ada !");
 }

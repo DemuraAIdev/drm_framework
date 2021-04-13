@@ -1,5 +1,9 @@
 <?php
 
+namespace Drm\Config;
+
+
+//Base URL
 define('URL_BASE', 'public');
 define('URL_PROTOCOL', '//');
 define('URL_SERVER', $_SERVER['HTTP_HOST']);

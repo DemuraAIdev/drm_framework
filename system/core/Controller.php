@@ -4,7 +4,6 @@
 
 namespace Drm\Core;
 
-require_once DRM . '/config/config.php';
 
 class Controller
 {

@@ -1,6 +1,7 @@
 <?php
 
 use Drm\Core\Controller;
+use Drm\Core\flasher;
 
 class absen extends Controller
 {
@@ -25,6 +26,11 @@ class absen extends Controller
     public function tambah()
     {
         if ($this->model('absen_model')->tambahdatauser($_POST) > 0) {
+            flasher::setflash('Berhasil', 'Ditambahkan', 'success');
+            header('Location: ' . BASEURL . '/absen');
+            exit;
+        } else {
+            flasher::setflash('gagal', 'Ditambahkan', 'danger');
             header('Location: ' . BASEURL . '/absen');
             exit;
         }
