@@ -1,0 +1,5 @@
+#jika kamu ingin public/  hilang biarkan saja ini jika 
+#jika kamu ingin public/ ada di url hapus saja ini
+
+RewriteEngine On
+RewriteRule ^(.*) public/$1 [L]
