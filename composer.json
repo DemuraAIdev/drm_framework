@@ -5,6 +5,7 @@
         "name": "Drm",
         "email": "cyberaioff@gmail.com"
     }],
+    "license": "MIT",
     "require": {},
     "autoload": {
         "psr-4": {
