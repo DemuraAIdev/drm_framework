@@ -11,7 +11,7 @@
 //chck php version
 $PHPVersion = '7.2';
 if (version_compare(PHP_VERSION, $PHPVersion, '<')) {
-    die("Your PHP version must be {$PHPVersion} or higher to run CodeIgniter. Current version: " . PHP_VERSION);
+    die("Your PHP version must be {$PHPVersion} or higher to run Drm. Current version: " . PHP_VERSION);
 }
 unset($PHPVersion);
 
