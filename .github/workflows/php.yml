@@ -1,3 +1,4 @@
+uses: franzliedke/gh-action-php@0.2.0
 name: PHP Composer
 
 on:
