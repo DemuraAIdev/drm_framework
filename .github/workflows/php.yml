@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  composer:
 
     runs-on: ubuntu-latest
 
@@ -29,9 +29,7 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
 
-    
-    - name: PHP Runner
-      uses: franzliedke/gh-action-php@0.2.0
+      
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
