@@ -1,6 +1,14 @@
 <?php
 
-/** For more info about namespaces plase @see http://php.net/manual/en/language.namespaces.importing.php */
+/**
+ * DRM is Mini  Framwork PHP
+ *
+ * @package    Drm
+ * @version    1.0.2
+ * @author     Drm Developer
+ * @license    MIT License
+ * @copyright  2021 Drm TEAM
+ */
 
 namespace Drm\Core;
 

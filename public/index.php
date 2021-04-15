@@ -8,18 +8,10 @@
  * @license http://opensource.org/licenses/MIT MIT License
  */
 
+use Drm\Core\basecore;
 
 //Jalankan session
 if (!session_id()) session_start();
-/*
- * Error Handling system
- */
-
-function customError($errno, $errstr, $fileerror, $lineerror, $error_con)
-{
-    include '../system/check/error_handling.php';
-}
-set_error_handler("customError");
 
 /*
  * COre DIRECTORY NAME
@@ -42,7 +34,12 @@ $system_folder = 'system';
 define('ROOT', dirname(__DIR__) . DIRECTORY_SEPARATOR);
 define('DRM', ROOT . $system_folder . DIRECTORY_SEPARATOR);
 
-use Drm\Core\App;
+/*
+ * Error Handling system
+ */
+require_once DRM . 'check/error_fatal.php';
+ob_start();
+
 //auto load composer
 require ROOT . 'vendor/autoload.php';
 /*
@@ -60,10 +57,12 @@ require_once DRM . 'config/config.php';
  */
 require_once DRM . 'init.php';
 
+
 //memeriksa config maintenance
 if ($maintance == "On") {
     echo "maintenance";
 } else {
     //memulai Application
-    $app = new App;
+    $app = new basecore;
 }
+ob_end_flush();

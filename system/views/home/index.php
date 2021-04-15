@@ -1,23 +1,47 @@
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">index</li>
-    </ol>
-</nav>
-<div class="jumbotron">
-    <h1 class="display-4">Welcome To DRM_FRM</h1>
-    <p class="lead">DRM_FRM is a mini php framework to create a mini website</p>
-    <p></p>
-    <hr class="my-4">
-    <p></p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+<?php
 
-</div>
-<div class="progress">
-    <div class="progress-bar progress-bar-striped-bar-animated" role="progressbar" style="width: 10%" aria-valuenow="10"
-        aria-valuemin="0" aria-valuemax="100"></div>
-    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
-        aria-valuemin="0" aria-valuemax="100"></div>
-    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
-        aria-valuemin="0" aria-valuemax="100"></div>
+use Drm\Core\flasher;
+use Drm\Core\basecore;
+use Drm\Core\classes\Dates;
+
+flasher::flash();
+
+?>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="container-fluid">
+            <div class="jumbotron">
+                <h1 class="display-4">Welcome</h1>
+                <p class="lead">DRM_FRM is a mini php framework to create a mini website</p>
+                <p></p>
+                <hr class="my-4">
+                <p></p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+
+            </div>
+        </div>
+
+        <div class="col-sm mt-4">
+            <h3>Get Started</h3>
+            <p>The controller generating this page is found at <code>system/controller/home.php.</code>
+                This view can be found at <code>system/views/home/index.php.</code>
+                You can modify these files to get your application started quickly.</p>
+        </div>
+        <div class="col-sm mt-4">
+            <h3>System MVC</h3>
+            <p>Model-View-Controller atau MVC adalah sebuah metode untuk membuat sebuah aplikasi dengan memisahkan data
+                dari tampilan dan cara bagaimana memprosesnya. Dalam implementasinya kebanyakan kerangka kerja dalam
+                aplikasi web adalah berbasis arsitektur MVC.</p>
+        </div>
+        <div class="col-sm mt-4">
+            <h3>Directory</h3>
+            <p><b>system</b><code> drm_frm/system/</code></p>
+            <p><b>Core</b><code> drm_frm/system/core/</code></p>
+            <p><b>Config</b><code> drm_frm/system/config/config.php</code></p>
+            <p><b>View</b><code> drm_frm/system/view/</code></p>
+        </div>
+    </div>
+    <small class="float-right">Version <?php echo basecore::version('Drm') ?></small>
+    <small><?php echo dates::showtime('Y-m-d', 'America/New_York') ?></small>
 </div>

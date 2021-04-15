@@ -26,11 +26,23 @@ class absen extends Controller
     public function tambah()
     {
         if ($this->model('absen_model')->tambahdatauser($_POST) > 0) {
-            flasher::setflash('Berhasil', 'Ditambahkan', 'success');
+            flasher::setflash('Data user ', 'Berhasil', 'Ditambahkan', 'success');
             header('Location: ' . BASEURL . '/absen');
             exit;
         } else {
-            flasher::setflash('gagal', 'Ditambahkan', 'danger');
+            flasher::setflash('Data user ', 'gagal', 'Ditambahkan', 'danger');
+            header('Location: ' . BASEURL . '/absen');
+            exit;
+        }
+    }
+    public function hapus($id)
+    {
+        if ($this->model('absen_model')->hapusdatauser($id) > 0) {
+            flasher::setflash('Data user ', 'Berhasil', 'di hapus', 'success');
+            header('Location: ' . BASEURL . '/absen');
+            exit;
+        } else {
+            flasher::setflash('Data user ', 'gagal', 'di hapus', 'danger');
             header('Location: ' . BASEURL . '/absen');
             exit;
         }

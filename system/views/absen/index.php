@@ -12,7 +12,7 @@
     <div class="row">
         <div class="col-lg-6">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formmodal">
+            <button type="button" class="btn btn-primary tomboltambah" data-toggle="modal" data-target="#formmodal">
                 Tambah user
             </button>
             <br>
@@ -20,9 +20,15 @@
             <h3>Daftar Absen</h3>
             <ul class="list-group">
                 <?php foreach ($data['abs'] as $abs) : ?>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
+                <li class="list-group-item ">
                     <?= $abs['nama']; ?>
-                    <a href="<?= BASEURL; ?>absen/detail/<?= $abs['id'] ?>" class="badge badge-primary">Detail</a>
+                    <a href="<?= BASEURL; ?>absen/hapus/<?= $abs['id'] ?>" class="badge badge-danger float-right ml-1"
+                        onclick="return confirm('yakin?')">Hapus</a>
+                    <a href="<?= BASEURL; ?>absen/ubah/<?= $abs['id'] ?>"
+                        class="badge badge-success float-right ml-1 tampilmodaledit" data-toggle="modal"
+                        data-target="#formmodal">Edit</a>
+                    <a href="<?= BASEURL; ?>absen/detail/<?= $abs['id'] ?>"
+                        class="badge badge-primary float-right ml-1">Detail</a>
                 </li>
                 <?php endforeach; ?>
             </ul>

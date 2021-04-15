@@ -4,16 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Error</title>
 </head>
 
 <body>
-
-    <div class="alert alert-danger" role="alert">
-        <h4 class="alert-heading">ERROR Alert!</h4>
-        <p><b>ERROR <?= '[' . $errno . ']</b>' . $errstr ?><br><b>Locate:</b> <?= $fileerror ?> <br><b>Line:</b>
-                <?= $lineerror ?>
-                <br><?= $error_con ?> <br>
-        </p>
+    <div class="container mt-5">
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <h4 class="alert-heading">ERROR Alert!</h4>
+            <p><b>ERROR <?= '[' . $level . ']</b>' . $message ?><br><b>Locate:</b> <?= $file ?> <br><b>Line:</b>
+                    <?= $line ?>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </p>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

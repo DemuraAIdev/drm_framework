@@ -1,9 +1,3 @@
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">About</a></li>
-        <li class="breadcrumb-item active" aria-current="page">index</li>
-    </ol>
-</nav>
 <div class="jumbotron">
     <h1 class="display-4">Welcome To About</h1>
     <p class="lead">

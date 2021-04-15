@@ -1,8 +1,8 @@
 <?php
 
-if (file_exists(DRM . "$system_core/App" . ".php")) {
+if (file_exists(DRM . "$system_core/basecore" . ".php")) {
 } else {
-    die("File App.php tidak ada !");
+    die("File basecore.php tidak ada !");
 }
 if (file_exists(DRM . "$system_core/Controller" . ".php")) {
 } else {
