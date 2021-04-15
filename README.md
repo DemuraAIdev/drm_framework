@@ -1,4 +1,4 @@
-# DRM MASIH DALAM PROJECT BLM SELESAI
+# DRM 
 
 DRM Is Mini framwork
 DRM is NOT a professional framework and it does not come with all the stuff real frameworks have
