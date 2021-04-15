@@ -58,13 +58,13 @@ class basecore
     }
     public static function version($App)
     {
-        if ($App == 'Core') {
+        if ($App == 'Drm') {
             echo '1.0.2';
         }
         if ($App == 'System') {
             echo '1.0';
         }
-        if ($App == 'Drm') {
+        if ($App == 'Core') {
             echo '1.0.5';
         }
     }

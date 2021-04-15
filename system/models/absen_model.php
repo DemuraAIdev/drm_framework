@@ -46,4 +46,23 @@ class absen_model
 
         return $this->db->rowcount();
     }
+
+
+    public function ubahdatauser($data)
+    {
+        $query = "UPDATE user_absen SET
+                            nama = :nama,
+                            no = :no,
+                            email = :email
+                        WHERE id = :id";
+        $this->db->query($query);
+        $this->db->bind('nama', $data['nama']);
+        $this->db->bind('no', $data['no']);
+        $this->db->bind('email', $data['email']);
+        $this->db->bind('id', $data['id']);
+
+        $this->db->execute();
+
+        return $this->db->rowcount();
+    }
 }

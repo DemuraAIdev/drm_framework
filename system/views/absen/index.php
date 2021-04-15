@@ -24,9 +24,9 @@
                     <?= $abs['nama']; ?>
                     <a href="<?= BASEURL; ?>absen/hapus/<?= $abs['id'] ?>" class="badge badge-danger float-right ml-1"
                         onclick="return confirm('yakin?')">Hapus</a>
-                    <a href="<?= BASEURL; ?>absen/ubah/<?= $abs['id'] ?>"
+                    <a href="<?= BASEURL; ?>absen/ubah/<?= $abs['id']; ?>"
                         class="badge badge-success float-right ml-1 tampilmodaledit" data-toggle="modal"
-                        data-target="#formmodal">Edit</a>
+                        data-target="#formmodal" data-id="<?= $abs['id'] ?>">Edit</a>
                     <a href="<?= BASEURL; ?>absen/detail/<?= $abs['id'] ?>"
                         class="badge badge-primary float-right ml-1">Detail</a>
                 </li>
@@ -48,6 +48,7 @@
             </div>
             <div class="modal-body">
                 <form action="<?= BASEURL; ?>/absen/tambah" method="post">
+                    <input type="hidden" name="id" id="id">
                     <div class="form-group">
                         <label for="nama">Nama</label>
                         <input type="text" class="form-control" id="nama" placeholder="Agus" name="nama">

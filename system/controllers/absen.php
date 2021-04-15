@@ -47,4 +47,21 @@ class absen extends Controller
             exit;
         }
     }
+    public function getubah()
+    {
+        echo json_encode($this->model('absen_model')->getAbsenbyid($_POST['id']));
+    }
+
+    public function ubah()
+    {
+        if ($this->model('absen_model')->ubahdatauser($_POST) > 0) {
+            flasher::setflash('Data user ', 'Berhasil', 'Di ubah', 'success');
+            header('Location: ' . BASEURL . '/absen');
+            exit;
+        } else {
+            flasher::setflash('Data user ', 'gagal', 'di ubah', 'danger');
+            header('Location: ' . BASEURL . '/absen');
+            exit;
+        }
+    }
 }
