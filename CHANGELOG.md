@@ -2,6 +2,12 @@
 
 ## v1.0.2
 
+### Fixbug
+
+* Fix Edit user +AJAX
+
+## v1.0.2
+
 ### Add class
 
 * Add class Date
