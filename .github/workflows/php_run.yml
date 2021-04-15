@@ -1,0 +1,10 @@
+
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: PHP Runner
+      uses: franzliedke/gh-action-php@0.2.0
