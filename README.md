@@ -1,4 +1,8 @@
 [![GitHub license](https://img.shields.io/github/license/DemuraAIdev/drm_framwork)](https://github.com/DemuraAIdev/drm_framwork/blob/main/LICENSE)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/DemuraAIdev/drm_framwork)](https://github.com/DemuraAIdev/drm_framwork/releases/)
+[![GitHub Download](https://img.shields.io/github/downloads/DemuraAIdev/drm_framwork/total)
+[![GitHub stars](https://img.shields.io/github/stars/DemuraAIdev/drm_framwork)](https://github.com/DemuraAIdev/drm_framwork/)
+[![GitHub fork](https://img.shields.io/github/forks/DemuraAIdev/drm_framwork)
 # DRM 
 
 DRM Is Mini framwork
