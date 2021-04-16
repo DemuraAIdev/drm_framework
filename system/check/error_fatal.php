@@ -1,5 +1,6 @@
 <?php
 
+use Drm\Core\classes\logs;
 
 
 function tanganiError1($level, $message, $file, $line)
@@ -8,6 +9,14 @@ function tanganiError1($level, $message, $file, $line)
     echo    "<b>Terjadi FATAL Error</b>";
     echo    "<p>[{$level}] {$message}<br> <b>locate :</b>{$file}<br><b>Line :</b>{$line}</p>";
     echo "</div>";
+    logs::logerror(
+        "Fatal Error" .
+            "[{$level}] {$message}" . PHP_EOL .
+            "Locate :{$file}" . PHP_EOL .
+            "Line :{$line}" . PHP_EOL .
+            date("F j, Y, g:i a") . PHP_EOL .
+            "-------------------------" . PHP_EOL
+    );
 
     return true;
 }
@@ -15,6 +24,15 @@ error_reporting(0);
 function tanganiError($level, $message, $file, $line, $error_con)
 {
     include 'error_handling.php';
+
+    logs::logerror(
+        "Fatal Error" .
+            "[{$level}] {$message}" . PHP_EOL .
+            "Locate :{$file}" . PHP_EOL .
+            "Line :{$line}" . PHP_EOL .
+            date("F j, Y, g:i a") . PHP_EOL .
+            "-------------------------" . PHP_EOL
+    );
 
     return true;
 }

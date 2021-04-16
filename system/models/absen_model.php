@@ -1,6 +1,7 @@
 <?php
 
 use Drm\Core\Database;
+use Drm\Core\classes\logs;
 
 class absen_model
 {
@@ -35,6 +36,15 @@ class absen_model
 
         $this->db->execute();
 
+        logs::log("Berhasil Menambah User"  . PHP_EOL .
+            "Nama :{$data['nama']}" . PHP_EOL .
+            "No Absen :{$data['no']}" . PHP_EOL .
+            "email :{$data['email']}" . PHP_EOL .
+            date("F j, Y, g:i a") . PHP_EOL .
+            "-------------------------" . PHP_EOL, 'User');
+
+
+
         return $this->db->rowcount();
     }
     public function hapusdatauser($id)
@@ -43,6 +53,11 @@ class absen_model
         $this->db->query($query);
         $this->db->bind('id', $id);
         $this->db->execute();
+
+        logs::log("Berhasil Menghapus User"  . PHP_EOL .
+            "id :{$id}" . PHP_EOL .
+            date("F j, Y, g:i a") . PHP_EOL .
+            "-------------------------" . PHP_EOL, 'User');
 
         return $this->db->rowcount();
     }
@@ -62,6 +77,14 @@ class absen_model
         $this->db->bind('id', $data['id']);
 
         $this->db->execute();
+
+        logs::log("Berhasil Ubah User"  . PHP_EOL .
+            "Nama :{$data['nama']}" . PHP_EOL .
+            "No Absen :{$data['no']}" . PHP_EOL .
+            "email :{$data['email']}" . PHP_EOL .
+            date("F j, Y, g:i a") . PHP_EOL .
+            "-------------------------" . PHP_EOL, 'User');
+
 
         return $this->db->rowcount();
     }

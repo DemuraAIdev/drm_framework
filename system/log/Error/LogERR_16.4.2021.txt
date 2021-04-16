@@ -1,0 +1,40 @@
+Fatal Error[8] Undefined variable: sefs
+Locate :C:\xampp\htdocs\project1\drm_frm\public\index.php
+Line :62
+April 16, 2021, 7:04 pm
+-------------------------
+Fatal Error[8] Undefined index: nama
+Locate :C:\xampp\htdocs\project1\drm_frm\system\models\absen_model.php
+Line :74
+April 16, 2021, 7:09 pm
+-------------------------
+Fatal Error[8] Undefined index: no
+Locate :C:\xampp\htdocs\project1\drm_frm\system\models\absen_model.php
+Line :75
+April 16, 2021, 7:09 pm
+-------------------------
+Fatal Error[8] Undefined index: email
+Locate :C:\xampp\htdocs\project1\drm_frm\system\models\absen_model.php
+Line :76
+April 16, 2021, 7:09 pm
+-------------------------
+Fatal Error[8] Undefined index: id
+Locate :C:\xampp\htdocs\project1\drm_frm\system\models\absen_model.php
+Line :77
+April 16, 2021, 7:09 pm
+-------------------------
+Fatal Error[8] Undefined index: nama
+Locate :C:\xampp\htdocs\project1\drm_frm\system\models\absen_model.php
+Line :82
+April 16, 2021, 7:09 pm
+-------------------------
+Fatal Error[8] Undefined index: no
+Locate :C:\xampp\htdocs\project1\drm_frm\system\models\absen_model.php
+Line :83
+April 16, 2021, 7:09 pm
+-------------------------
+Fatal Error[8] Undefined index: email
+Locate :C:\xampp\htdocs\project1\drm_frm\system\models\absen_model.php
+Line :84
+April 16, 2021, 7:09 pm
+-------------------------

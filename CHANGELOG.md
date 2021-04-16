@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.1.2
+
+### Add Classes
+
+* Add classes Log
+
 ## v1.1.1
 
 ### Update Classes

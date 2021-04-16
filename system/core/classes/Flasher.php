@@ -1,13 +1,12 @@
 <?php
 
 /**
- * DRM is Mini  Framwork PHP
+ * flasher Class
  *
- * @package    Drm
- * @version    1.0.2
- * @author     Drm Developer
- * @license    MIT License
- * @copyright  2021 Drm TEAM
+ * @package		Drm
+ * @subpackage	Core
+ * @category	classes
+ * @author		Drm
  */
 
 namespace Drm\Core\classes;

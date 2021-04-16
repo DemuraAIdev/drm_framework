@@ -1,5 +1,14 @@
 <?php
 
+/**
+ * Dates Class
+ *
+ * @package		Drm
+ * @subpackage	Core
+ * @category	classes
+ * @author		Drm
+ */
+
 namespace Drm\Core\classes;
 
 
