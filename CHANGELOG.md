@@ -1,6 +1,12 @@
 # Changelog
 
-## v1.0.2
+## v1.1.1
+
+### Update Classes
+
+* Update classes Flasher
+
+## v1.1.0
 
 ### Fixbug
 
