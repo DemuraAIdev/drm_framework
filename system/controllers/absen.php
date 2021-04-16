@@ -1,7 +1,7 @@
 <?php
 
 use Drm\Core\Controller;
-use Drm\Core\flasher;
+use Drm\Core\classes\flasher;
 
 class absen extends Controller
 {

@@ -3,7 +3,7 @@
         <div class="col-lg-6">
             <?php
 
-            use Drm\Core\flasher;
+            use Drm\Core\classes\flasher;
 
             flasher::flash();
             ?>

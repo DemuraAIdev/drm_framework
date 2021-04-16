@@ -59,7 +59,7 @@ class basecore
     public static function version($App)
     {
         if ($App == 'Drm') {
-            echo '1.1.0';
+            echo '1.1.1';
         }
         if ($App == 'System') {
             echo '1.0';

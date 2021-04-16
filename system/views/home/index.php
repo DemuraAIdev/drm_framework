@@ -1,11 +1,7 @@
 <?php
 
-use Drm\Core\flasher;
 use Drm\Core\basecore;
 use Drm\Core\classes\Dates;
-
-flasher::flash();
-
 ?>
 
 <div class="container mt-5">
