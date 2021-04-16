@@ -1,4 +1,4 @@
-[![GitHub license](https://img.shields.io/github/license/DemuraAIdev/drm_framwork)](https://github.com/codeigniter4/CodeIgniter4/blob/develop/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/DemuraAIdev/drm_framwork)](https://github.com/DemuraAIdev/drm_framwork/blob/main/LICENSE)
 # DRM 
 
 DRM Is Mini framwork
