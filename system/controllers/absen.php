@@ -64,4 +64,13 @@ class absen extends Controller
             exit;
         }
     }
+
+    public function cari()
+    {
+        $data['judul'] = ' daftar absen';
+        $data['abs'] = $this->model('absen_model')->caridataAbsen();
+        $this->view('templates/header', $data);
+        $this->view('absen/index', $data);
+        $this->view('templates/footer');
+    }
 }

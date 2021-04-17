@@ -12,6 +12,8 @@
 
 namespace Drm\Core;
 
+use Drm\Core\ver;
+
 class basecore
 {
     protected $controller = 'home';
@@ -59,13 +61,18 @@ class basecore
     public static function version($App)
     {
         if ($App == 'Drm') {
-            echo '1.1.2';
+            echo ver::DrmVer('Drm');
         }
         if ($App == 'System') {
-            echo '1.0';
+            echo ver::DrmVer('System');;
         }
         if ($App == 'Core') {
-            echo '1.0.5';
+            echo ver::DrmVer('Core');
+        }
+        if ($App == 'All') {
+            echo ver::DrmVer('Drm');
+            echo ver::DrmVer('System');
+            echo ver::DrmVer('Core');
         }
     }
 };

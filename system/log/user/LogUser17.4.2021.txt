@@ -1,0 +1,24 @@
+Berhasil Menghapus User
+id :10
+April 17, 2021, 11:09 am
+-------------------------
+Berhasil Menghapus User
+id :15
+April 17, 2021, 11:30 am
+-------------------------
+Berhasil Menambah User
+Nama :Agus
+No Absen :21
+email :cyberaioff@gmail.com
+April 17, 2021, 11:30 am
+-------------------------
+Berhasil Menambah User
+Nama :Agus1
+No Absen :32
+email :cyberaioff@gmail.com
+April 17, 2021, 11:30 am
+-------------------------
+Berhasil Menghapus User
+id :13
+April 17, 2021, 11:40 am
+-------------------------

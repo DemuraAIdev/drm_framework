@@ -11,6 +11,8 @@
 
 namespace Drm\Core\classes;
 
+use Drm\Core\ver;
+
 class flasher
 {
 
@@ -34,5 +36,9 @@ class flasher
                     </div>';
             unset($_SESSION['flash']);
         }
+    }
+    public static function version()
+    {
+        echo ver::ClassVer('Flasher');
     }
 }

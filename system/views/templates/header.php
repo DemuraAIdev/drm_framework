@@ -23,9 +23,6 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="<?php echo BASEURL; ?>absen">exampleAbsen</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="<?php echo BASEURL; ?>about">About</a>
-                </li>
             </ul>
         </div>
     </nav>

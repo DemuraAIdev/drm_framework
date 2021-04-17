@@ -41,6 +41,8 @@ $system_folder = 'system';
 //config system
 define('ROOT', dirname(__DIR__) . DIRECTORY_SEPARATOR);
 define('DRM', ROOT . $system_folder . DIRECTORY_SEPARATOR);
+define('CORE', ROOT . $system_folder . DIRECTORY_SEPARATOR . 'core');
+define('CLASSES', ROOT . $system_folder . DIRECTORY_SEPARATOR . 'core/classes');
 
 /*
  * Error Handling system
@@ -58,8 +60,6 @@ require ROOT . 'vendor/autoload.php';
  */
 
 require_once DRM . 'config/config.php';
-
-
 /*
  * LOADING 
  */

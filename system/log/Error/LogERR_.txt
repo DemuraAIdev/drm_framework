@@ -1,0 +1,33 @@
+Fatal Error[1] Uncaught Error: Class 'Drm\Core\ver' not found in C:\xampp\htdocs\project1\drm_frm\system\core\basecore.php:64
+Stack trace:
+#0 C:\xampp\htdocs\project1\drm_frm\system\views\home\index.php(41): Drm\Core\basecore::version('Drm')
+#1 C:\xampp\htdocs\project1\drm_frm\system\core\Controller.php(20): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\project1\drm_frm\system\controllers\Home.php(13): Drm\Core\Controller->view('home/index', Array)
+#3 [internal function]: Home->index('p')
+#4 C:\xampp\htdocs\project1\drm_frm\system\core\basecore.php(49): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\project1\drm_frm\public\index.php(74): Drm\Core\basecore->__construct()
+#6 {main}
+  thrown
+Locate :C:\xampp\htdocs\project1\drm_frm\system\core\basecore.php
+Line :64
+April 17, 2021, 12:29 pm
+-------------------------
+Fatal Error[1] Uncaught Error: Call to undefined method Drm\Core\ver::Userver() in C:\xampp\htdocs\project1\drm_frm\system\core\basecore.php:76
+Stack trace:
+#0 C:\xampp\htdocs\project1\drm_frm\system\views\templates\footer.php(17): Drm\Core\basecore::version('All')
+#1 C:\xampp\htdocs\project1\drm_frm\system\core\Controller.php(20): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\project1\drm_frm\system\controllers\Home.php(14): Drm\Core\Controller->view('templates/foote...')
+#3 [internal function]: Home->index()
+#4 C:\xampp\htdocs\project1\drm_frm\system\core\basecore.php(49): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\project1\drm_frm\public\index.php(74): Drm\Core\basecore->__construct()
+#6 {main}
+  thrown
+Locate :C:\xampp\htdocs\project1\drm_frm\system\core\basecore.php
+Line :76
+April 17, 2021, 5:54 pm
+-------------------------
+Fatal Error[8] Undefined index: rgdg
+Locate :C:\xampp\htdocs\project1\drm_frm\system\core\ver.php
+Line :12
+April 17, 2021, 5:54 pm
+-------------------------

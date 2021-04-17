@@ -1,6 +1,6 @@
 <?php
 
-use Drm\Core\Database;
+use Drm\Core\classes\Database;
 use Drm\Core\classes\logs;
 
 class absen_model
@@ -87,5 +87,14 @@ class absen_model
 
 
         return $this->db->rowcount();
+    }
+    public function caridataAbsen()
+    {
+        $keyword = $_POST['keyword'];
+        $query = "SELECT * FROM user_absen WHERE nama LIKE :keyword";
+        $this->db->query($query);
+        $this->db->bind('keyword', "%$keyword%");
+
+        return $this->db->resultSet();
     }
 }

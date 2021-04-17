@@ -1,0 +1,87 @@
+Fatal Error[8] Undefined index: keyword
+Locate :C:\xampp\htdocs\project1\drm_frm\system\models\absen_model.php
+Line :93
+April 17, 2021, 11:33 am
+-------------------------
+Fatal Error[1] Uncaught Error: Class 'Drm\Core\Database' not found in C:\xampp\htdocs\project1\drm_frm\system\models\absen_model.php:13
+Stack trace:
+#0 C:\xampp\htdocs\project1\drm_frm\system\core\Controller.php(26): absen_model->__construct()
+#1 C:\xampp\htdocs\project1\drm_frm\system\controllers\absen.php(11): Drm\Core\Controller->model('absen_model')
+#2 [internal function]: absen->index()
+#3 C:\xampp\htdocs\project1\drm_frm\system\core\basecore.php(47): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\project1\drm_frm\public\index.php(72): Drm\Core\basecore->__construct()
+#5 {main}
+  thrown
+Locate :C:\xampp\htdocs\project1\drm_frm\system\models\absen_model.php
+Line :13
+April 17, 2021, 11:39 am
+-------------------------
+Fatal Error[2] require_once(C:\xampp\htdocs\project1\drm_frm\system\/models/about_model.php): failed to open stream: No such file or directory
+Locate :C:\xampp\htdocs\project1\drm_frm\system\core\Controller.php
+Line :25
+April 17, 2021, 11:41 am
+-------------------------
+Fatal Error[64] require_once(): Failed opening required 'C:\xampp\htdocs\project1\drm_frm\system\/models/about_model.php' (include_path='C:\xampp\php\PEAR')
+Locate :C:\xampp\htdocs\project1\drm_frm\system\core\Controller.php
+Line :25
+April 17, 2021, 11:41 am
+-------------------------
+Fatal Error[2] require_once(C:\xampp\htdocs\project1\drm_frm\system\models\User_model.php): failed to open stream: No such file or directory
+Locate :C:\xampp\htdocs\project1\drm_frm\system\core\Controller.php
+Line :25
+April 17, 2021, 11:42 am
+-------------------------
+Fatal Error[64] require_once(): Failed opening required 'C:\xampp\htdocs\project1\drm_frm\system\/models/User_model.php' (include_path='C:\xampp\php\PEAR')
+Locate :C:\xampp\htdocs\project1\drm_frm\system\core\Controller.php
+Line :25
+April 17, 2021, 11:42 am
+-------------------------
+Fatal Error[2] require_once(C:\xampp\htdocs\project1\drm_frm\system\models\about_model.php): failed to open stream: No such file or directory
+Locate :C:\xampp\htdocs\project1\drm_frm\system\core\Controller.php
+Line :25
+April 17, 2021, 11:43 am
+-------------------------
+Fatal Error[64] require_once(): Failed opening required 'C:\xampp\htdocs\project1\drm_frm\system\/models/about_model.php' (include_path='C:\xampp\php\PEAR')
+Locate :C:\xampp\htdocs\project1\drm_frm\system\core\Controller.php
+Line :25
+April 17, 2021, 11:43 am
+-------------------------
+Fatal Error[1] Uncaught Error: Class 'about_model' not found in C:\xampp\htdocs\project1\drm_frm\system\core\Controller.php:26
+Stack trace:
+#0 C:\xampp\htdocs\project1\drm_frm\system\controllers\About.php(11): Drm\Core\Controller->model('about_model')
+#1 [internal function]: About->index()
+#2 C:\xampp\htdocs\project1\drm_frm\system\core\basecore.php(47): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\project1\drm_frm\public\index.php(72): Drm\Core\basecore->__construct()
+#4 {main}
+  thrown
+Locate :C:\xampp\htdocs\project1\drm_frm\system\core\Controller.php
+Line :26
+April 17, 2021, 11:43 am
+-------------------------
+Fatal Error[1] Uncaught Error: Call to undefined method about_model::getUser() in C:\xampp\htdocs\project1\drm_frm\system\controllers\About.php:11
+Stack trace:
+#0 [internal function]: About->index()
+#1 C:\xampp\htdocs\project1\drm_frm\system\core\basecore.php(47): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\project1\drm_frm\public\index.php(72): Drm\Core\basecore->__construct()
+#3 {main}
+  thrown
+Locate :C:\xampp\htdocs\project1\drm_frm\system\controllers\About.php
+Line :11
+April 17, 2021, 11:44 am
+-------------------------
+Fatal Error[8] Undefined index: nama
+Locate :C:\xampp\htdocs\project1\drm_frm\system\views\about\index.php
+Line :4
+April 17, 2021, 11:44 am
+-------------------------
+Fatal Error[1] Uncaught Error: Call to undefined method User_model::getUser() in C:\xampp\htdocs\project1\drm_frm\system\controllers\Home.php:12
+Stack trace:
+#0 [internal function]: Home->index()
+#1 C:\xampp\htdocs\project1\drm_frm\system\core\basecore.php(47): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\project1\drm_frm\public\index.php(72): Drm\Core\basecore->__construct()
+#3 {main}
+  thrown
+Locate :C:\xampp\htdocs\project1\drm_frm\system\controllers\Home.php
+Line :12
+April 17, 2021, 11:45 am
+-------------------------
