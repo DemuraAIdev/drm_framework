@@ -31,3 +31,9 @@ Locate :C:\xampp\htdocs\project1\drm_frm\system\core\ver.php
 Line :12
 April 17, 2021, 5:54 pm
 -------------------------
+Fatal Error[8] PDO::__construct(): send of 5 bytes failed with errno=10053 An established connection was aborted by the software in your host machine.
+
+Locate :C:\xampp\htdocs\project1\drm_frm\system\core\classes\database.php
+Line :39
+April 18, 2021, 8:20 am
+-------------------------
