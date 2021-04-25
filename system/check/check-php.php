@@ -1,6 +1,6 @@
 <?php
 
-if (file_exists(DRM . "$system_core/basecore" . ".php")) {
+if (file_exists(DRM . "$system_core/DRM" . ".php")) {
 } else {
     die("File basecore.php tidak ada !");
 }
