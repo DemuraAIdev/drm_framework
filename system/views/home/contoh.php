@@ -11,7 +11,7 @@ use Drm\Core\classes\form;
             <div class="form-group">
                 <?php
                 echo form::label('contohinput1', 'Nama :');
-                echo form::input('contohinput1');
+                echo form::input('contohinput1', '', array('pleachoder' => 'Nama'));
                 ?>
             </div>
             <?php

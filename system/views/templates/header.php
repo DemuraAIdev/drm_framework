@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+
+use Drm\Core\classes\Asset;
+
+?>
 
 <head>
     <meta charset="UTF-8">
     <title>DRM <?= $data['judul']; ?></title>
-    <link rel="stylesheet" href="<?php echo BASEURL; ?>css/bootstrap.css">
+    <?= Asset::css('bootstrap.css') ?>
 </head>
 
 <body>
