@@ -1,4 +1,10 @@
 # Changelog
+## v1.1.6
+### Add Classes
+* Update version.json
+* Add Asset class
+* Add Error handling class
+
 ## v1.1.4
 ### Add Classes
 * Add classes ver
