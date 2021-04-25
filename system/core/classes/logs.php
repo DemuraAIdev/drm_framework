@@ -16,6 +16,7 @@ use Drm\Core\ver;
 
 class logs
 {
+    
     public static function log($isi, $nama)
     {
         $log  = $isi;

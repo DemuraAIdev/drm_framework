@@ -4,7 +4,7 @@ namespace Drm\Core\classes;
 
 class form
 {
-    public static function start($action, $method)
+    public static function start($action, $method, $attributs = null)
     {
         echo '<div class="modal-body">
                     <form action="' . BASEURL . $action . '" method="' . $method . '">';
@@ -26,14 +26,14 @@ class form
         echo '<label for="' . $for . '">' . $label . '</label>';
     }
 
-    public static function input($field, $value = null)
+    public static function input($field, $value = null, $attributs = null)
     {
-        echo '<input type="text" class="form-control" value="' . $value . '" id="', $field, '" name="' . $field . '">';
+        echo '<input type="text" placeholder="' . $attributs['pleachoder'] . '" class="form-control" value="' . $value . '" id="', $field, '" name="' . $field . '">';
     }
 
-    public static function password($field, $value = null)
+    public static function password($field, $value = null, $attributs = null)
     {
-        echo '<input type="password" class="form-control" value="' . $value . '" id="', $field, '" name="' . $field . '">';
+        echo '<input type="password" placeholder="' . $attributs['pleachoder'] . '" class="form-control" value="' . $value . '" id="', $field, '" name="' . $field . '">';
     }
 
     public static function hidden($field, $value = null)
