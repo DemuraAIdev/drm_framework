@@ -16,7 +16,7 @@ if (version_compare(PHP_VERSION, $PHPVersion, '<')) {
 unset($PHPVersion);
 
 
-use Drm\Core\basecore;
+use Drm\Core\DRM;
 
 //Jalankan session
 if (!session_id()) session_start();
@@ -43,6 +43,7 @@ define('ROOT', dirname(__DIR__) . DIRECTORY_SEPARATOR);
 define('DRM', ROOT . $system_folder . DIRECTORY_SEPARATOR);
 define('CORE', ROOT . $system_folder . DIRECTORY_SEPARATOR . 'core');
 define('CLASSES', ROOT . $system_folder . DIRECTORY_SEPARATOR . 'core/classes');
+define('VENDOR', ROOT . 'vendor/');
 
 /*
  * Error Handling system
@@ -50,8 +51,18 @@ define('CLASSES', ROOT . $system_folder . DIRECTORY_SEPARATOR . 'core/classes');
 require_once DRM . 'check/error_fatal.php';
 ob_start();
 
+// Get the start time and memory for use later
+defined('DRM_START_TIME') or define('DRM_START_TIME', microtime(true));
+defined('DRM_START_MEM') or define('DRM_START_MEM', memory_get_usage());
+
 //auto load composer
-require ROOT . 'vendor/autoload.php';
+
+if (!is_file(VENDOR . 'autoload.php')) {
+    die('Composer is not installed. Please run "php composer.phar update" in the root to install Composer');
+}
+require_once VENDOR . 'autoload.php';
+
+
 /*
  * LOAD CONFIG FILE
  *-
@@ -59,18 +70,20 @@ require ROOT . 'vendor/autoload.php';
  * Set the path if it is not in the same directory as this file.
  */
 
-require_once DRM . 'config/config.php';
+DRM::init('config.php');
+
 /*
  * LOADING 
  */
 require_once DRM . 'init.php';
 
-
+//MAINTANCE MODE
+$maintance = 'off'; //ketik On untuk masuk mode maintance jika tidak ketik off
 //memeriksa config maintenance
 if ($maintance == "On") {
     echo "maintenance";
 } else {
     //memulai Application
-    $app = new basecore;
+    $app = new DRM;
 }
 ob_end_flush();
