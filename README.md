@@ -38,3 +38,8 @@ DRM is NOT a professional framework and it does not come with all the stuff real
    [MAMP on Mac OS](http://stackoverflow.com/questions/7670561/how-to-get-htaccess-to-work-on-mamp)
 
 4. Install composer and run `composer install` in the project's folder to create the PSR-4 autoloading stuff from Composer automatically.
+
+## License
+
+The Drm framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
