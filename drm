@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * Fuel is a fast, lightweight, community driven PHP 5.4+ framework.
+ *
+ * @package    Fuel
+ * @version    1.8.2
+ * @author     Fuel Development Team
+ * @license    MIT License
+ * @copyright  2010 - 2018 Fuel Development Team
+ * @link       http://fuelphp.com
+ */
+
+use packages\package;
+
+/**
+ * Refuse to run oil when called from php-cgi !
+ */
+if (substr(php_sapi_name(), 0, 3) == 'cgi') {
+    die("The use of drm is not supported when running php-cgi. drm needs php-cli to function!\n\n");
+}
+
+
+/*
+ * SYSTEM DIRECTORY NAME
+ *-
+ * This variable must contain the name of your "system" directory.
+ * Set the path if it is not in the same directory as this file.
+ */
+
+$system_folder = 'system';
+
+/**
+ * Website document root
+ */
+define('ROOT', dirname(__DIR__) . DIRECTORY_SEPARATOR);
+
+/**
+ * Path to the application directory.
+ */
+define('DRM', ROOT . $system_folder . DIRECTORY_SEPARATOR);
+
+/**
+ * Path to the default class directory.
+ */
+define('CLASSES', ROOT . $system_folder . DIRECTORY_SEPARATOR . 'core/classes');
+
+/**
+ * The path to the framework core.
+ */
+define('CORE', ROOT . $system_folder . DIRECTORY_SEPARATOR . 'core');
+
+require_once 'vendor/autoload.php';
+
+
+// Get the start time and memory for use later
+defined('DRM_START_TIME') or define('DRM_START_TIME', microtime(true));
+defined('DRM_START_MEM') or define('DRM_START_MEM', memory_get_usage());
