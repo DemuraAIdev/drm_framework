@@ -1,10 +1,8 @@
 <p align="center">
-
 <a href="https://github.com/DemuraAIdev/drm_framwork/releases/"><img src="https://img.shields.io/github/v/release/DemuraAIdev/drm_framwork?label=DRM" alt="Pembaruan"></a>
 <a href="https://github.com/DemuraAIdev/drm_framwork/"><img src="https://img.shields.io/github/downloads/DemuraAIdev/drm_framwork/total" alt="Latest Stable Version"></a>
 <a href="https://github.com/DemuraAIdev/drm_framwork/"><img src="https://img.shields.io/github/stars/DemuraAIdev/drm_framwork" alt="License"></a>
-<a href="https://github.com/DemuraAIdev/drm_framwork/"><img src="https://img.shields.io/github/forks/DemuraAIdev/drm_framwork" alt="License"></a>
-<a href="https://github.com/DemuraAIdev/drm_framwork/blob/Developer/LICENSE"><img src="https://img.shields.io/github/license/DemuraAIdev/drm_framwork></a>
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/github/license/DemuraAIdev/drm_framwork" alt="License"></a>
 </p>
 # DRM 
 
