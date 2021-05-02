@@ -1,3 +1,8 @@
 language: php
-rvm:
- - 7.2.0
+php:
+ - 7.2
+before-script:
+ - composer install --no-interaction
+
+script:
+ = vendor/bin/phpunit 
