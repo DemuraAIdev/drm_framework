@@ -1,4 +1,11 @@
 # Changelog
+## v1.1.8
+###Add classes
+* Form
+* Asset
+###Add classes
+* Add Fontawasome
+
 ## v1.1.6
 ### Add Classes
 * Update version.json
