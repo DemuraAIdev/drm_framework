@@ -1,0 +1,14 @@
+{
+    "name": "drm/core",
+    "description": "The Core of Drm",
+    "authors": [{
+        "name": "Drm",
+        "email": "cyberaioff@gmail.com"
+    }],
+    "autoloader": {
+        "psr-4": {
+            "DRM\\": "system/"
+        }
+    },
+    "require": {}
+}
