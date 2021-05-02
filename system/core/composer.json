@@ -1,9 +1,0 @@
-{
-    "name": "drm/core",
-    "description": "The Core of Drm",
-    "authors": [{
-        "name": "Drm",
-        "email": "cyberaioff@gmail.com"
-    }],
-    "require": {}
-}
