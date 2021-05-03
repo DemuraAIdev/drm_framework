@@ -6,8 +6,8 @@
 <a href="https://github.com/DemuraAIdev/drm_framwork/"><img src="https://img.shields.io/github/stars/DemuraAIdev/drm_framwork" alt="License"></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/github/license/DemuraAIdev/drm_framwork" alt="License"></a>
 
-<a href="https://discord.gg/wWJeaCs63b">
-</a>
+<button href="https://discord.gg/wWJeaCs63b">
+</button>
 
 </p>
 # DRM 
