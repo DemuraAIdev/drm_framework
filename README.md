@@ -43,3 +43,4 @@ DRM is NOT a professional framework and it does not come with all the stuff real
 
 The Drm framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
+<iframe src="https://discord.com/widget?id=837717027556294746&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
