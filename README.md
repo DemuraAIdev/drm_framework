@@ -8,7 +8,9 @@
 
 <button href="https://discord.gg/wWJeaCs63b">
 </button>
-
+		<a href="https://discord.gg/wWJeaCs63b">
+			<img src="https://canary.discordapp.com/api/guilds/837717027556294746/embed.png" alt="Discord server">
+		</a>
 </p>
 # DRM 
 
