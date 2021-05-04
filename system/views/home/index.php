@@ -49,6 +49,14 @@ use Drm\Core\DRM;
             </p>
         </div>
     </div>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1 class="display-4" align="center">JS</h1>
+            <p align="center">
+            <h1>ANIME.JS</h1>
+            </p>
+        </div>
+    </div>
     <small class="float-right">Version <?php echo DRM::version('Drm') ?></small>
     <small><?php echo dates::showtime('Y-m-d', 'America/New_York') ?></small>
 </div>
