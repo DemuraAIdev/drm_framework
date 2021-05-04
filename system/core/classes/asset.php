@@ -53,4 +53,30 @@ class Asset
     {
         echo '<script src="https://use.fontawesome.com/0717083133.js"></script>';
     }
+    public static function bootstrap($type)
+    {
+        switch ($type) {
+            case 'css':
+                echo '
+                        <meta charset="UTF-8">
+                        <link rel="stylesheet" href="' . BASEURL . 'bootstrap/css/bootstrap.min.css' . '">';
+                break;
+            case 'js':
+                echo '<script src="' . BASEURL . 'js/jquery/jquery.js"></script> 
+                        <script src="' . BASEURL . 'js/popperjs/popper.js"></script> 
+                        <script src="' . BASEURL . 'bootstrap/js/bootstrap.js"></script>';
+                break;
+            default:
+                errorhandler::notif('Error Bootstrap variable');
+                break;
+        }
+    }
+    public static function jquery()
+    {
+        echo '<script src="' . BASEURL . 'js/jquery/jquery.js"></script>';
+    }
+    public static function animejs()
+    {
+        echo '<script src="' . BASEURL . 'animejs/lib/anime.min.js"></script>';
+    }
 }
