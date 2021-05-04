@@ -10,7 +10,7 @@ use Drm\Core\classes\Asset;
     <meta charset="UTF-8">
     <title>DRM <?= $data['judul']; ?></title>
     <link rel="shortcut icon" href="<?php BASEURL ?> images/icon.ico">
-    <?= Asset::css('bootstrap.css', array()) ?>
+    <?= Asset::bootstrap('css') ?>
     <?= Asset::fontawesome() ?>
 </head>
 
