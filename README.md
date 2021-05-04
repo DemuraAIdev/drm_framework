@@ -21,7 +21,7 @@ DRM is NOT a professional framework and it does not come with all the stuff real
 ## Features
 
 - simple, easy to understand
-- With Bootsrap 4
+- With [Bootstrap](https://getbootstrap.com), [Fontawesome](https://fontawesome.com/start), [AnimateJS](https://animejs.com/)
 - simple but clean structure
 - makes "beautiful" clean URLs
 - demo CRUD actions: Create, Read, Update and Delete database entries easily (ON PROJECT)
@@ -45,6 +45,19 @@ DRM is NOT a professional framework and it does not come with all the stuff real
    [MAMP on Mac OS](http://stackoverflow.com/questions/7670561/how-to-get-htaccess-to-work-on-mamp)
 
 4. Install composer and run `composer install` in the project's folder to create the PSR-4 autoloading stuff from Composer automatically.
+
+##CSS & JS
+
+##Bootstrap
+Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components. 
+
+##Fontawesome
+Font Awesome is a font and icon toolkit based on CSS and Less. It was made by Dave Gandy for use with Bootstrap, and later was incorporated into the BootstrapCDN. Font Awesome has a reported 38% market share among those websites that use third-party font scripts on their platform, ranking it second place after Google Fonts.[2] 
+
+##Anime.js
+Anime.js (/ˈæn.ə.meɪ/) is a lightweight JavaScript animation library with a simple, yet powerful API.
+It works with CSS properties, SVG, DOM attributes and JavaScript Objects. 
+
 
 ## License
 
