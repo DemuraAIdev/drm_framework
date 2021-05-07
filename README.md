@@ -63,7 +63,7 @@ It works with CSS properties, SVG, DOM attributes and JavaScript Objects.
 
 The Drm framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-##SUPPORT PLS
+## SUPPORT PLS
 
 [Patreon](https://www.patreon.com/drmdev)
 
