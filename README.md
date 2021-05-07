@@ -1,4 +1,4 @@
-<p align="center"><img src="https://cdn.discordapp.com/attachments/837719575063691274/837732607089049680/baner.jpg" /></p>
+<p align="center"><img src="https://cdn.discordapp.com/attachments/837781420314853376/840197840562683924/baner.jpg" /></p>
 <p align="center">
 <a href="https://github.com/DemuraAIdev/drm_framwork/releases/"><img src="https://img.shields.io/github/v/release/DemuraAIdev/drm_framwork?label=DRM" alt="Pembaruan"></a>
 <a href="https://github.com/DemuraAIdev/drm_framwork/"><img src="https://img.shields.io/github/downloads/DemuraAIdev/drm_framwork/total" alt="Latest Stable Version"></a>
