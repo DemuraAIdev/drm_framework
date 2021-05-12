@@ -1,4 +1,10 @@
 # Changelog
+## v1.2.1
+###Update System
+* Update Config FIle
+* Update Asset Clases
+* Update Home Page DRM
+
 ## v1.1.8
 ###Add classes
 * Form
