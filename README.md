@@ -28,6 +28,7 @@ DRM is NOT a professional framework and it does not come with all the stuff real
 - tries to follow PSR 1/2 coding guidelines
 - uses PDO for any database requests, comes with an additional PDO debug tool to emulate your SQL statements
 - uses only native PHP code, so people don't have to learn a framework
+- DRM Manage Config Version and More (Cooming soon)
 
 ## Requirements
 
