@@ -68,3 +68,7 @@ The Drm framework is open-sourced software licensed under the [MIT license](http
 
 [Patreon](https://www.patreon.com/drmdev)
 
+##Become a Developer
+
+[Stackoverflow Teams](https://stackoverflow.com/c/drm-developer)
+
