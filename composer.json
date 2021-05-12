@@ -7,9 +7,13 @@
     }],
     "license": "MIT",
     "require": {},
+    "scripts": {
+        "drmserver": "php -S localhost:8080"
+    },
     "autoload": {
         "psr-4": {
-            "Drm\\": "system/"
+            "Drm\\": "system/",
+            "packages\\": "system/packages/"
         }
     }
 }
