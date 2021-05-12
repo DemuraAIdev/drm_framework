@@ -10,12 +10,11 @@ use Drm\Core\DRM;
     <div class="row">
         <div class="container-fluid">
             <div class="jumbotron">
-                <h1 class="display-4">Welcome</h1>
-                <p class="lead">DRM_FRM is a mini php framework to create a mini website</p>
-                <p></p>
+                <h1 align="center" class="display-4">Welcome</h1>
+                <p align="center" class="lead">DRM_FRM is a mini php framework to create a mini website</p>
                 <hr class="my-4">
-                <p></p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                <a align="center" class="btn btn-primary btn-lg" href="https://github.com/DemuraAIdev/drm_framwork"
+                    role="button"><i class="fab fa-github"></i></a>
 
             </div>
         </div>
@@ -42,18 +41,11 @@ use Drm\Core\DRM;
     </div>
     <div class="container-fluid">
         <div class="jumbotron">
-            <h1 class="display-4" align="center">CSS</h1>
+            <h1 class="display-4" align="center">CSS & JS</h1>
             <p align="center">
                 <img src="<?php BASEURL ?>images/fontawasome.png" alt="fontawasome" width="100px" height="100px">
                 <img src="<?php BASEURL ?>images/boot.png" alt="fontawasome" width="100px" height="100px">
-            </p>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="jumbotron">
-            <h1 class="display-4" align="center">JS</h1>
-            <p align="center">
-            <h1>ANIME.JS</h1>
+                <img src="<?php BASEURL ?>images/animejs.jpg" alt="fontawasome" width="100px" height="100px">
             </p>
         </div>
     </div>

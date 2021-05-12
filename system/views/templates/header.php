@@ -10,8 +10,19 @@ use Drm\Core\classes\Asset;
     <meta charset="UTF-8">
     <title>DRM <?= $data['judul']; ?></title>
     <link rel="shortcut icon" href="<?php BASEURL ?> images/icon.ico">
-    <?= Asset::bootstrap('css') ?>
-    <?= Asset::fontawesome() ?>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <?= Asset::bootstrap('css');
+    Asset::fontawesomekit() ?>
+    <style>
+    a {
+        font-family: Oswald;
+    }
+
+    nav {
+        font-family: Oswald;
+    }
+    </style>
 </head>
 
 <body>
