@@ -56,3 +56,5 @@ require_once 'vendor/autoload.php';
 // Get the start time and memory for use later
 defined('DRM_START_TIME') or define('DRM_START_TIME', microtime(true));
 defined('DRM_START_MEM') or define('DRM_START_MEM', memory_get_usage());
+
+package::load('cmd', 'command');
