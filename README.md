@@ -46,6 +46,10 @@ DRM is NOT a professional framework and it does not come with all the stuff real
 
 4. Install composer and run `composer install` in the project's folder to create the PSR-4 autoloading stuff from Composer automatically.
 
+## Docs
+
+### Coming soon
+
 ## CSS & JS
 
 ### Bootstrap
