@@ -1,14 +1,24 @@
 <?php
 
+
 if (file_exists(DRM . "$system_core/DRM" . ".php")) {
 } else {
-    die("File basecore.php tidak ada !");
+    if (DEBUG == false) {
+        die(include('errorpage.php'));
+    }
+    die("File DRM.php Not Found !");
 }
 if (file_exists(DRM . "$system_core/Controller" . ".php")) {
 } else {
-    die("File Controller.php tidak ada !");
+    if (DEBUG == false) {
+        die(include('errorpage.php'));
+    }
+    die("File Controller.php Not Found !");
 }
 if (file_exists(DRM . "config/config" . ".php")) {
 } else {
-    die("file config.php tidak ada  !");
+    if (DEBUG == false) {
+        die(include('errorpage.php'));
+    }
+    die("file config.php Not Found  !");
 }

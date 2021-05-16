@@ -5,6 +5,9 @@ use Drm\Core\classes\logs;
 
 function tanganiError1($level, $message, $file, $line)
 {
+    if (DEBUG == false) {
+        die(include('errorpage.php'));
+    }
     echo "<div style='padding: 2rem; background: rgba(200, 0, 0, 0.5); color: white'>";
     echo    "<b>Terjadi FATAL Error</b>";
     echo    "<p>[{$level}] {$message}<br> <b>locate :</b>{$file}<br><b>Line :</b>{$line}</p>";
@@ -23,8 +26,10 @@ function tanganiError1($level, $message, $file, $line)
 error_reporting(0);
 function tanganiError($level, $message, $file, $line, $error_con)
 {
+    if (DEBUG == false) {
+        die(include('errorpage.php'));
+    }
     include 'error_handling.php';
-
     logs::logerror(
         "Fatal Error" .
             "[{$level}] {$message}" . PHP_EOL .
