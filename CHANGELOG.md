@@ -6,7 +6,7 @@
 ### Update Packages
 * Update cek
 * Update cmd
-### Addeature
+### Add Feature
 * See Database & Table use ```php drm database -s```
 
 ## v1.2.1
