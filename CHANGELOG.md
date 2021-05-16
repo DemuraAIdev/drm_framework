@@ -1,4 +1,14 @@
 # Changelog
+## v1.2.2
+### Add CLasses
+* Add Decode
+* Update Asset
+### Update Packages
+* Update cek
+* Update cmd
+### Addeature
+* See Database & Table use ```php drm database -s```
+
 ## v1.2.1
 ### Update System
 * Update Config FIle
@@ -9,7 +19,7 @@
 ###Add classes
 * Form
 * Asset
-###Add classes
+### Add classes
 * Add Fontawasome
 
 ## v1.1.6
