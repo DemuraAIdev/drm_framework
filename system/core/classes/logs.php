@@ -11,16 +11,15 @@
 
 namespace Drm\Core\classes;
 
-use Drm\Core\classes\Dates;
 use Drm\Core\ver;
 
 class logs
 {
-    
-    public static function log($isi, $nama)
+
+    public static function log($isi, $name = 'NoName')
     {
         $log  = $isi;
-        file_put_contents(DRM . 'log/user/Log' . $nama . date('d-m-Y') . '.txt', $log, FILE_APPEND);
+        file_put_contents(DRM . 'log/user/Log' . $name . date('d-m-Y') . '.txt', $log, FILE_APPEND);
     }
     public static function logerror($isi)
     {
@@ -30,5 +29,9 @@ class logs
     public static function version()
     {
         echo ver::ClassVer('logs');
+    }
+    public static function debug($isi, $name)
+    {
+        file_put_contents(DRM . 'log/debug/' . $name . '/Log' . $name . date('d-m-Y') . '.txt', $isi, FILE_APPEND);
     }
 }

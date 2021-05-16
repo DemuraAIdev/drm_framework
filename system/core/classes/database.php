@@ -14,6 +14,8 @@ namespace Drm\Core\classes;
 
 use PDO;
 use Drm\Core\ver;
+use Drm\Core\classes\logs;
+use Drm\Core\classes\exception\PDOdebug;
 
 class Database
 {
@@ -22,13 +24,17 @@ class Database
     private $pass = dbpass;
     private $db_name = dbname;
     private $dbdrive = dbdriver;
+    private $dbport = dbport;
 
     private $dbh;
     private $stmt;
+    private $debug;
 
     public function __construct()
     {
-        $dsn = $this->dbdrive . ':host=' . $this->host . ';dbname=' . $this->db_name;
+        $this->debug = new PDOdebug;
+        $dsn = $this->dbdrive . ':host=' . $this->host . ';port=' . $this->dbport . ';dbname=' . $this->db_name;
+
 
         //Option
         $option = [
@@ -38,7 +44,7 @@ class Database
         try {
             $this->dbh = new PDO($dsn, $this->user, $this->pass, $option);
         } catch (\PDOException $e) {
-            die($e->getMessage());
+            $this->debug->exception($e->getMessage());
         }
     }
 
@@ -75,6 +81,13 @@ class Database
         $this->execute();
         return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+    public function showdb()
+    {
+        $this->execute();
+        $this->stmt->fetchAll(PDO::FETCH_COLUMN);
+    }
+
+
     public function single() //jika data yang diinginkan satu
     {
         $this->execute();
