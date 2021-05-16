@@ -1,0 +1,3 @@
+PDO ERROR
+SQLSTATE[HY000] [1049] Unknown database 'drm_frm'
+----------------
