@@ -16,6 +16,13 @@ if (version_compare(PHP_VERSION, $PHPVersion, '<')) {
 unset($PHPVersion);
 
 
+//Base URL
+define('URL_BASE', 'public'); //public FOlder
+define('URL_PROTOCOL', '//'); //URL Protocol
+define('URL_SERVER', $_SERVER['HTTP_HOST']); //App URL
+define('URL_SUB_FOLDER', str_replace(URL_BASE, '', dirname($_SERVER['SCRIPT_NAME']))); //sub folder
+define('BASEURL', URL_PROTOCOL . URL_SERVER . URL_SUB_FOLDER); //BASE
+
 use Drm\Core\DRM;
 
 //Jalankan session
@@ -49,6 +56,7 @@ define('VENDOR', ROOT . 'vendor/');
  * Error Handling system
  */
 require_once DRM . 'check/error_fatal.php';
+
 ob_start();
 
 // Get the start time and memory for use later
@@ -58,7 +66,7 @@ defined('DRM_START_MEM') or define('DRM_START_MEM', memory_get_usage());
 //auto load composer
 
 if (!is_file(VENDOR . 'autoload.php')) {
-    die('Composer is not installed. Please run "php composer.phar update" in the root to install Composer');
+    die('Composer is not installed. Please run "php composer.json update" in the root to install Composer');
 }
 require_once VENDOR . 'autoload.php';
 
@@ -72,10 +80,13 @@ require_once VENDOR . 'autoload.php';
 
 DRM::init('config.php');
 
+
 /*
  * LOADING 
  */
 require_once DRM . 'init.php';
+
+
 
 //MAINTANCE MODE
 $maintance = 'off'; //ketik On untuk masuk mode maintance jika tidak ketik off
