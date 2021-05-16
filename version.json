@@ -1,0 +1,15 @@
+[{
+        "Drm": "DRM v1.2.2",
+        "System": "System v1.3",
+        "Core": "Core v1.0.6"
+    },
+    {
+        "database": "v1.1",
+        "dates": "v1.0",
+        "Flasher": "v1.0",
+        "logs": "v1.2",
+        "form": "v0.1-beta",
+        "Asset": "v0.1-beta",
+        "errorhandler": "v1.0"
+    }
+]

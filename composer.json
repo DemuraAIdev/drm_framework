@@ -6,14 +6,17 @@
         "email": "cyberaioff@gmail.com"
     }],
     "license": "MIT",
-    "require": {},
     "scripts": {
         "drmserver": "php -S localhost:8080"
     },
+    "require": {},
     "autoload": {
         "psr-4": {
             "Drm\\": "system/",
             "packages\\": "system/packages/"
         }
+    },
+    "require-dev": {
+        "vimeo/psalm": "^4.7"
     }
 }
