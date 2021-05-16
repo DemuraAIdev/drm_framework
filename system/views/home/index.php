@@ -4,6 +4,8 @@ use Drm\Core\basecore;
 use Drm\Core\classes\Dates;
 use Drm\Core\DRM;
 
+DRM_START_MEM
+
 ?>
 
 <div class="container mt-5">

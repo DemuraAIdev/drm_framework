@@ -14,15 +14,6 @@ use Drm\Core\classes\Asset;
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <?= Asset::bootstrap('css');
     Asset::fontawesomekit() ?>
-    <style>
-    a {
-        font-family: Oswald;
-    }
-
-    nav {
-        font-family: Oswald;
-    }
-    </style>
 </head>
 
 <body>
