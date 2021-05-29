@@ -21,7 +21,7 @@ class DRM
     protected $method = 'index';
     protected $params = [];
 
-    public function __construct()
+    public function run()
     {
         $url = $this->parseURL();
 
