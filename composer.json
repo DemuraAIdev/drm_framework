@@ -1,6 +1,7 @@
 {
     "name": "ddr5/drm",
     "description": "mini famwork",
+    "keywords": ["application", "website", "development", "framework", "PHP", "PHP7"],
     "authors": [{
         "name": "Drm",
         "email": "cyberaioff@gmail.com"
@@ -9,14 +10,20 @@
     "scripts": {
         "drmserver": "php -S localhost:8080"
     },
-    "require": {},
+    "require": {
+        "vlucas/phpdotenv": "^5.3"
+    },
     "autoload": {
+        "classmap": [
+            "src/"
+        ],
         "psr-4": {
             "Drm\\": "system/",
             "packages\\": "system/packages/"
         }
     },
     "require-dev": {
-        "vimeo/psalm": "^4.7"
+        "vimeo/psalm": "^4.7",
+        "phpunit/phpunit": "^9"
     }
 }
