@@ -2,7 +2,7 @@
 
 /**
  * DRM - an mini framwork php
- *
+ * Get Error? Pls Report to https://github.com/DemuraAIdev/drm_framwork/issues
  * @package drm_frm
  * @author Vahry
  * @license http://opensource.org/licenses/MIT MIT License
@@ -41,7 +41,6 @@ $system_core = 'core';
  * This variable must contain the name of your "system" directory.
  * Set the path if it is not in the same directory as this file.
  */
-
 $system_folder = 'system';
 
 
@@ -77,24 +76,25 @@ require_once VENDOR . 'autoload.php';
  * This variable must contain the name of your "config" directory.
  * Set the path if it is not in the same directory as this file.
  */
-
 DRM::init('config.php');
 
+/*
+ * LOAD MAINTENACE CONFIG FILE
+ */
+require_once('maintenance_system.php');
 
 /*
  * LOADING 
  */
 require_once DRM . 'init.php';
 
-
-
-//MAINTANCE MODE
-$maintance = 'off'; //ketik On untuk masuk mode maintance jika tidak ketik off
-//memeriksa config maintenance
-if ($maintance == "On") {
-    echo "maintenance";
+if (file_exists('maintenance.php')) {
+    require_once('maintenance.php');
+    die(include('maintenance_page.php'));
 } else {
-    //memulai Application
-    $app = new DRM;
+    $app = new Drm;
+    $app->run();
 }
+
+
 ob_end_flush();
