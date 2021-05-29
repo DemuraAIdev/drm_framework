@@ -18,5 +18,5 @@
             "Drm\\": "system/",
             "packages\\": "system/packages/"
         }
-    },
+    }
 }
