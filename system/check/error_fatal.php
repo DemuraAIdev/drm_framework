@@ -2,7 +2,7 @@
 
 use Drm\Core\classes\logs;
 
-
+error_reporting(0);
 function tanganiError1($level, $message, $file, $line)
 {
     if (DEBUG == false) {
@@ -23,8 +23,8 @@ function tanganiError1($level, $message, $file, $line)
 
     return true;
 }
-error_reporting(0);
-function tanganiError($level, $message, $file, $line, $error_con)
+
+function tanganiError($level, $message, $file, $line)
 {
     if (DEBUG == false) {
         die(include('errorpage.php'));
