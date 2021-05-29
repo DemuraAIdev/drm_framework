@@ -19,6 +19,8 @@ use Drm\Core\DRM;
                     role="button"><i class="fab fa-github"></i></a>
                 <a align="center" class="btn btn-danger btn-lg" href="https://stackoverflow.com/users/15802907/drm-dev"
                     role="button"><i class="fab fa-stack-overflow"></i></i></a>
+                <a align="center" class="btn btn-dark btn-lg" href="https://discord.gg/NGGtYA5jPj"
+                    role="button"><i class="fab fa-discord"></i></i></a>
 
 
             </div>
