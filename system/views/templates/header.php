@@ -3,21 +3,23 @@
 <?php
 
 use Drm\Core\classes\Asset;
+use Drm\Core\classes\title;
 
 ?>
 
 <head>
     <meta charset="UTF-8">
-    <title>DRM <?= $data['judul']; ?></title>
+    <title>DRM <?= title::get(); ?></title>
     <link rel="shortcut icon" href="<?php BASEURL ?> images/icon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <?= Asset::bootstrap('css');
-    Asset::fontawesomekit() ?>
+    Asset::fontawesomekit();
+    Asset::css('style.css');
+    ?>
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
         <a class="navbar-brand" href="<?= BASEURL; ?>">DRM FRM</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"

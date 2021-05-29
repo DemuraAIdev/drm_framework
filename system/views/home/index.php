@@ -4,9 +4,9 @@ use Drm\Core\basecore;
 use Drm\Core\classes\Dates;
 use Drm\Core\DRM;
 
-DRM_START_MEM
 
 ?>
+
 
 <div class="container mt-5">
     <div class="row">
@@ -15,8 +15,11 @@ DRM_START_MEM
                 <h1 align="center" class="display-4">Welcome</h1>
                 <p align="center" class="lead">DRM_FRM is a mini php framework to create a mini website</p>
                 <hr class="my-4">
-                <a align="center" class="btn btn-primary btn-lg" href="https://github.com/DemuraAIdev/drm_framwork"
+                <a align="center" class="btn btn-dark btn-lg" href="https://github.com/DemuraAIdev/drm_framwork"
                     role="button"><i class="fab fa-github"></i></a>
+                <a align="center" class="btn btn-danger btn-lg" href="https://stackoverflow.com/users/15802907/drm-dev"
+                    role="button"><i class="fab fa-stack-overflow"></i></i></a>
+
 
             </div>
         </div>
@@ -54,3 +57,7 @@ DRM_START_MEM
     <small class="float-right">Version <?php echo DRM::version('Drm') ?></small>
     <small><?php echo dates::showtime('Y-m-d', 'America/New_York') ?></small>
 </div>
+<script>
+
+
+</script>

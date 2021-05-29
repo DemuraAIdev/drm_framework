@@ -4,15 +4,15 @@ use Drm\Core\DRM;
 use Drm\Core\classes\Asset;
 ?>
 
-
+<script src="<?php BASEURL ?>animejs/lib/anime.min.js"></script>
 <?php
+Asset::jquery();
 Asset::bootstrap('js');
-Asset::animejs();
+Asset::js('anime.js', array('type' => 'module'));
 
 ?>
 <script>
 var url = "<?php echo BASEURL;; ?>";
-var ver = "<?php echo DRM::version('All') ?>";
 </script>
 <script src="<?= BASEURL; ?>js/script.js">
 </script>
