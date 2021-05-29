@@ -10,13 +10,16 @@
     "scripts": {
         "drmserver": "php -S localhost:8080"
     },
+    "require": {
+        "vlucas/phpdotenv": "^5.3"
+    },
     "autoload": {
-        "classmap": [
-            "src/"
-        ],
         "psr-4": {
             "Drm\\": "system/",
             "packages\\": "system/packages/"
         }
+    },
+    "require-dev": {
+        "vimeo/psalm": "^4.7"
     }
 }
