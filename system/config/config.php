@@ -8,7 +8,8 @@ define('DEBUG', true);
 //Name APP
 define('APP_NAME', 'DRM');
 
-
+define('MAINTENANCE', false); //true, false
+define('MT_REASON', 'Update System'); //maintenance Reason
 
 
 //date/Time
@@ -31,4 +32,4 @@ define('PDO_DEBUG', true); //Debugger see log/debug/pdo
 
 
 //Fontawesome 
-define('FONTKIT', 'https://kit.fontawesome.com/bc77b70f00.js'); //default KIT
+define('FONTKIT', 'https://kit.fontawesome.com/bc77b70f00.js'); //default KIT https://kit.fontawesome.com/bc77b70f00.js
