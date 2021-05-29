@@ -16,9 +16,11 @@ use PDO;
 use Drm\Core\ver;
 use Drm\Core\classes\logs;
 use Drm\Core\classes\exception\PDOdebug;
+use Dotenv;
 
 class Database
 {
+
     private $host = dbhost;
     private $user = dbuser;
     private $pass = dbpass;
@@ -32,6 +34,7 @@ class Database
 
     public function __construct()
     {
+
         $this->debug = new PDOdebug;
         $dsn = $this->dbdrive . ':host=' . $this->host . ';port=' . $this->dbport . ';dbname=' . $this->db_name;
 

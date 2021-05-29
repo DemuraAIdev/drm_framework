@@ -32,7 +32,7 @@ class decode
      * @param string $var
      * @param string $line
      */
-    public static function json($json, $var, $line = null)
+    public static function jsonarray($json, $var, $line = null)
     {
         if (isset($line)) {
             $json = json_decode($json, TRUE);
@@ -40,6 +40,11 @@ class decode
         } else {
             var_dump(json_decode($json, true));
         }
+    }
+    public static function json($json, $var, $line)
+    {
+        $json = json_decode($json, TRUE);
+        echo $json[$line][$var];
     }
 
     /**
@@ -51,7 +56,7 @@ class decode
      * */
     public static function base64($contents)
     {
-        echo base64_encode($contents);
+        echo base64_decode($contents);
     }
 
     //Cooming soon
