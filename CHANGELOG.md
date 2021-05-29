@@ -1,4 +1,12 @@
 # Changelog
+## v1.2.3
+### Add CLasses
+* Update decode
+### Update Packages
+* Update cek
+* Update cmd
+### fix bugs tangani_error
+
 ## v1.2.2
 ### Add CLasses
 * Add Decode
