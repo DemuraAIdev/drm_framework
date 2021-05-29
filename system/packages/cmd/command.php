@@ -40,7 +40,6 @@ class command extends CLI
         ';
 
         $options->setHelp($logo);
-        $options->registerOption('longflag', 'This is a global flag that applies to all subcommands', 'l');
         $options->registerOption('drmascii', 'show DRM LOGO ASCII', 'd');
 
         $options->registerCommand('system', 'The System Command');
@@ -96,7 +95,7 @@ class command extends CLI
         switch ($options->getCmd()) {
             case 'system':
                 if ($options->getOpt('version')) {
-                    $this->success('v.1.2.2');
+                    $this->success('v.1.2.3');
                 }
                 break;
             case 'database':
