@@ -19,7 +19,4 @@
             "packages\\": "system/packages/"
         }
     },
-    "require-dev": {
-        "vimeo/psalm": "^4.7"
-    }
 }
