@@ -6,13 +6,6 @@
 <a href="https://github.com/DemuraAIdev/drm_framwork/"><img src="https://img.shields.io/github/stars/DemuraAIdev/drm_framwork" alt="License"></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/github/license/DemuraAIdev/drm_framwork" alt="License"></a>
 
-<button href="https://discord.gg/wWJeaCs63b">
-</button>
-		<a href="https://discord.gg/wWJeaCs63b">
-			<img src="https://canary.discordapp.com/api/guilds/837717027556294746/embed.png" alt="Discord server">
-		</a>
-</p>
-
 # DRM 
 
 DRM Is Mini framwork
@@ -74,4 +67,8 @@ The Drm framework is open-sourced software licensed under the [MIT license](http
 ## Become a Developer
 
 [Stackoverflow Teams](https://stackoverflow.com/c/drm-developer)
+
+## Official Discord
+
+[Discord](https://discord.gg/wWJeaCs63b)
 
