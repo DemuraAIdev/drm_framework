@@ -8,7 +8,7 @@
 
 # DRM 
 
-DRM Is Mini framwork
+DRM Is Mini framework
 DRM is NOT a professional framework and it does not come with all the stuff real frameworks have
 
 ## Features
