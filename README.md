@@ -43,6 +43,10 @@ DRM is NOT a professional framework and it does not come with all the stuff real
 
 ### Coming soon
 
+## DRM DATABASE (DRM BASE)
+
+### Use sleekdb & JSON 
+
 ## CSS & JS
 
 ### Bootstrap
