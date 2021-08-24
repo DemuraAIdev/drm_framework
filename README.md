@@ -6,7 +6,7 @@
 <a href="https://github.com/DemuraAIdev/drm_framwork/"><img src="https://img.shields.io/github/stars/DemuraAIdev/drm_framwork" alt="License"></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/github/license/DemuraAIdev/drm_framwork" alt="License"></a>
 
-# DRM CLOSED (for 1 month)
+# DRM OPEN
 
 DRM Is Mini framework
 DRM is NOT a professional framework and it does not come with all the stuff real frameworks have
